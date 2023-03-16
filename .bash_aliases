@@ -25,3 +25,4 @@ alias code=codium
 alias config='/usr/bin/git --git-dir=/home/mai/.cfg/ --work-tree=/home/mai'
 alias vite="npm create vite@latest"
 alias tailwind="npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p"
+alias tinify="git diff --diff-filter=ACM --name-only HEAD | grep ".png\|.jpg" | xargs tinypng"
