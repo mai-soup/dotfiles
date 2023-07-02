@@ -63,7 +63,6 @@ merge_pdfs_original_annotated () {
 
 
 alias fahcontrol="(&>/dev/null ~/fahcontrol/FAHControl &)"
-alias code=codium
 alias config='/usr/bin/git --git-dir=/home/mai/.cfg/ --work-tree=/home/mai'
 alias vite="npm create vite@latest"
 alias tailwind="npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p"
