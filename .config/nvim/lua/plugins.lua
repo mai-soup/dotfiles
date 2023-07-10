@@ -12,17 +12,15 @@ packer.startup(function(use)
     'svrana/neosolarized.nvim', -- color scheme
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
-  use 'L3MON4D3/LuaSnip'         -- snippets
-  use 'saadparwaiz1/cmp_luasnip' -- integrate lua snippets with cmp
-  use {
-    'nvim-lualine/lualine.nvim', -- statusline
-    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-  }
-  use 'onsails/lspkind-nvim'  -- pictograms
-  use 'hrsh7th/cmp-buffer'    -- nvim-cmp source for buffer words
-  use 'hrsh7th/cmp-nvim-lsp'  -- nvim-cmp source for nvim's built in LSP
-  use 'hrsh7th/nvim-cmp'      -- autocomplete
-  use 'neovim/nvim-lspconfig' -- LSP
+  use 'L3MON4D3/LuaSnip'            -- snippets
+  use 'saadparwaiz1/cmp_luasnip'    -- integrate lua snippets with cmp
+  use 'nvim-tree/nvim-web-devicons' -- file icons
+  use 'nvim-lualine/lualine.nvim'   -- statusline
+  use 'onsails/lspkind-nvim'        -- pictograms
+  use 'hrsh7th/cmp-buffer'          -- nvim-cmp source for buffer words
+  use 'hrsh7th/cmp-nvim-lsp'        -- nvim-cmp source for nvim's built in LSP
+  use 'hrsh7th/nvim-cmp'            -- autocomplete
+  use 'neovim/nvim-lspconfig'       -- LSP
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
