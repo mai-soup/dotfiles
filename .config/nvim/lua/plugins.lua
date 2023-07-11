@@ -32,6 +32,9 @@ packer.startup(function(use)
     requires = { 'jose-elias-alvarez/null-ls.nvim' }
   }
 
+  use 'williamboman/mason.nvim' -- helper for installing LSPs
+  use 'williamboman/mason-lspconfig.nvim'
+
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
 
