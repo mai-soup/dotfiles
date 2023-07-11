@@ -15,6 +15,7 @@ packer.startup(function(use)
   use 'L3MON4D3/LuaSnip'            -- snippets
   use 'saadparwaiz1/cmp_luasnip'    -- integrate lua snippets with cmp
   use 'nvim-tree/nvim-web-devicons' -- file icons
+  use 'nvimdev/lspsaga.nvim'
   use 'nvim-lualine/lualine.nvim'   -- statusline
   use 'onsails/lspkind-nvim'        -- pictograms
   use 'hrsh7th/cmp-buffer'          -- nvim-cmp source for buffer words
@@ -32,5 +33,6 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'
 
-  use 'akinsho/nvim-bufferline.lua'
+  use 'akinsho/nvim-bufferline.lua' -- file tabs
+  use 'norcalli/nvim-colorizer.lua' -- color code highlightings
 end)
