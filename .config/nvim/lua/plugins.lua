@@ -26,6 +26,12 @@ packer.startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
+
+  use {
+    'MunifTanjim/prettier.nvim',
+    requires = { 'jose-elias-alvarez/null-ls.nvim' }
+  }
+
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
 
