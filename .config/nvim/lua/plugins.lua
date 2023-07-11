@@ -41,4 +41,6 @@ packer.startup(function(use)
 
   use 'akinsho/nvim-bufferline.lua' -- file tabs
   use 'norcalli/nvim-colorizer.lua' -- color code highlightings
+
+  use 'lewis6991/gitsigns.nvim'
 end)
