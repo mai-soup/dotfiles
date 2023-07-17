@@ -2,6 +2,7 @@
 
 # If not running interactively, don't do anything
 if status is-interactive
+  set -gx TERM xterm-256color
     # don't put duplicate lines or lines starting with space in the history.
     set -U fish_history_ignore_space
     set -U fish_history_ignore_duplicates
@@ -59,5 +60,13 @@ if status is-interactive
     if test -f /etc/debian_version
       source ~/.config/fish/debian.fish
     end
+
+  # keybinds
+   # peco
+  bind \cr peco_select_history # Bind for peco select history to Ctrl+R
+  bind \cf peco_change_directory # Bind for peco change directory to Ctrl+F
+
+  # vim-like
+  bind \cl forward-char
 end
 

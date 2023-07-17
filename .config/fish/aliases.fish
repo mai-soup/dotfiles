@@ -67,4 +67,12 @@ alias tailwind="npm install -D tailwindcss postcss autoprefixer && npx tailwindc
 alias tinify="git diff --diff-filter=ACM --name-only HEAD | grep '.png\|.jpg' | xargs tinypng"
 alias bat=batcat
 alias focus="/home/mai/go/bin/focus"
+alias ghq="/home/mai/go/bin/ghq"
 alias vim="nvim"
+
+if type -q exa
+  alias ls="exa"
+  alias la="exa -a"
+  alias ll "exa -lg --icons"
+  alias lla "ll -a"
+end
