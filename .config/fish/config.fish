@@ -1,8 +1,12 @@
-# ~/.config/fish/config.fish: executed by fish for non-login shells.
+set fish_greeting ""
 
 # If not running interactively, don't do anything
 if status is-interactive
-  set -gx TERM xterm-256color
+    # if not in tmux, set terminal
+    if not set -q TMUX
+      set -gx TERM xterm-256color
+    end
+
     # don't put duplicate lines or lines starting with space in the history.
     set -U fish_history_ignore_space
     set -U fish_history_ignore_duplicates
