@@ -11,3 +11,5 @@ switch $TERM
         end
 end
 
+# bat is batcat
+alias bat="batcat"
