@@ -69,6 +69,9 @@ alias focus="/home/mai/go/bin/focus"
 alias ghq="/home/mai/go/bin/ghq"
 alias vim="nvim"
 
+alias dcd="docker compose down"
+alias dcu="docker compose up"
+
 if type -q exa
   alias ls="exa"
   alias la="exa -a"

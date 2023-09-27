@@ -72,5 +72,9 @@ if status is-interactive
 
   # vim-like
   bind \cl forward-char
+  
+  # to make sure docker runs smooth
+  set -x PATH /usr/bin $PATH
+  set -x DOCKER_HOST unix:///run/user/1000/docker.sock
 end
 
