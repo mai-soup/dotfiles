@@ -60,6 +60,10 @@ function merge_pdfs_original_annotated
     rm original-*.pdf annotated-*.pdf output-*.pdf
 end
 
+function drmrf
+    docker rm -f (docker ps -a -q); and docker volume rm (docker volume ls -q)
+end
+
 alias fahcontrol="nohup ~/fahcontrol/FAHControl >/dev/null 2>&1 &"
 alias config="git --git-dir=/home/mai/.cfg/ --work-tree=/home/mai"
 alias vite="npm create vite@latest"
