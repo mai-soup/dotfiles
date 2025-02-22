@@ -10,7 +10,7 @@ hints:
         mods: Control
 font:
   normal:
-    family: JetBrainsMonoNL Nerd Font
+    family: JetBrainsMono NF
     style: Regular
 # Colors (Solarized Dark)
 colors:
