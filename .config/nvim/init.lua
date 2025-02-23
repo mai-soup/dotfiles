@@ -38,10 +38,6 @@ local builtin = require("telescope.builtin")
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 
--- set up gruvbox
-require("gruvbox").setup()
-vim.cmd.colorscheme "gruvbox"
-
 -- select all
 vim.keymap.set('n', '<leader>a', 'ggVG', { noremap = true, silent = true })
 
