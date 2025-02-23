@@ -33,13 +33,7 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
--- load telescope
-local builtin = require("telescope.builtin")
-vim.keymap.set('n', '<C-p>', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-
 -- select all
 vim.keymap.set('n', '<leader>a', 'ggVG', { noremap = true, silent = true })
 
--- show files on left
-vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>', {})
+
