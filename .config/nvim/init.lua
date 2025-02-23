@@ -1,10 +1,3 @@
--- expand tabs to spaces, width 2
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.g.mapleader = " "
-
 -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -22,6 +15,10 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- require lua/options.lua
+require("options")
+-- require lua/keybinds.lua
+require("keybinds")
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
@@ -32,8 +29,4 @@ require("lazy").setup({
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
-
--- select all
-vim.keymap.set('n', '<leader>a', 'ggVG', { noremap = true, silent = true })
-
 
