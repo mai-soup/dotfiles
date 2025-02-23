@@ -25,25 +25,8 @@ vim.opt.rtp:prepend(lazypath)
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
-    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = {}},
-    {
-      'nvim-telescope/telescope.nvim', tag = '0.1.8',
-      dependencies = { 'nvim-lua/plenary.nvim' }
-    },
-    {
-      "nvim-treesitter/nvim-treesitter", build = ":TSUpdate",
-      config = function ()
-        local configs = require("nvim-treesitter.configs")
-
-        configs.setup({
-          ensure_installed = {"lua", "javascript", "markdown", "html"},
-          highlight = { enable = true },
-          indent = { enable = true },
-        })
-      end
-    }
+    { import = "plugins" },
   },
-  -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
   install = { colorscheme = { "gruvbox" } },
   -- automatically check for plugin updates
@@ -59,3 +42,8 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 require("gruvbox").setup()
 vim.cmd.colorscheme "gruvbox"
 
+-- select all
+vim.keymap.set('n', '<leader>a', 'ggVG', { noremap = true, silent = true })
+
+-- show files on left
+vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>', {})
